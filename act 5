@@ -1,0 +1,51 @@
+import 'dart:io';
+
+void main() {
+    print("Enter your name: ");
+    String? name = stdin.readLineSync();
+    print("Your name is ${name}");
+    print("");
+
+    print("Enter your AGE: ");
+    double? Age = double.parse(stdin.readLineSync()!);
+    print("Your age is ${Age}");
+    if (Age >= 18) {
+      print("Adult");
+      }else{
+        print("Minor");
+      }
+    print("Your age is ${Age}");
+    print("");
+
+    print("Enter 1st Number: ");
+    double? number1 = double.parse(stdin.readLineSync()!);
+    print("");
+    print("Your 1st Number is ${number1}");
+    print("");
+
+    print("Enter 2nd Number: ");
+    double? number2 = double.parse(stdin.readLineSync()!);
+    print("");
+    print("Your 2nd Number is ${number2}");
+    print("");
+
+    print("Enter 3rd Number: ");
+    double? number3 = double.parse(stdin.readLineSync()!);
+    print("");
+    print("Your 3rd Number is ${number3}");
+    print("");
+
+    double r1 = Age + number1 + number2;
+    double r2 = number1 - Age + number2;
+    double r3 = number2 * number1 + Age;
+    double r4 = Age / number1 + number2;
+
+    print("Hi ${name}, here is your result computation ");
+    print("Your age is ${Age}");
+    print("${r1} is your Lucky Number");
+    print("${r2} is your 2nd Lucky Number");
+    print("${r3} is your hours to Live");
+    print("${r4} is your partner Age");
+
+}
+
