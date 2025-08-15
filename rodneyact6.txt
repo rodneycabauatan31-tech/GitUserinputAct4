@@ -1,0 +1,35 @@
+import 'dart:io';
+
+void main() {
+    print("Enter your name: ");
+    String? name = stdin.readLineSync();
+    print("Your name is ${name}");
+    print("");
+
+    print("Enter your Section: ");
+    String? section = stdin.readLineSync();
+    print("Your section is ${section}");
+    print("");
+
+    print("Enter your Course: ");
+    String? course = stdin.readLineSync();
+    print("Your section is ${course}");
+    print("");
+
+    print("Enter your Year Level: ");
+    String? yrlvl = stdin.readLineSync();
+    print("Your section is ${yrlvl}");
+    print("");
+
+    print("Enter your Subject: ");
+    String? subject = stdin.readLineSync();
+    print("Your section is ${subject}");
+    print("");
+
+    print("Summary");
+    print("Name: ${name}");
+    print("Section: ${section}");
+    print("Course: ${course}");
+    print("Year Level: ${yrlvl}");
+    print("Subject: ${subject}");
+}
